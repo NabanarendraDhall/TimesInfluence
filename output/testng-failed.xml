@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyDefault Test Suite]">
+  <test name="Command line test e4ceb235-bf50-49c8-926b-a03432e3396e">
+    <classes>
+      <class name="com.TIautomation.TimesInfluence.CreatePitch">
+        <methods>
+          <include name="pitchAssign"/>
+          <include name="createPitch"/>
+          <include name="pitchApproval"/>
+        </methods>
+      </class> <!-- com.TIautomation.TimesInfluence.CreatePitch -->
+    </classes>
+  </test> <!-- Command line test e4ceb235-bf50-49c8-926b-a03432e3396e -->
+  <test name="Command line test e4ceb235-bf50-49c8-926b-a03432e3396e(failed)">
+    <classes>
+      <class name="com.TIautomation.TimesInfluence.CreatePitch">
+        <methods>
+          <include name="pitchAssign"/>
+          <include name="createPitch" invocation-numbers="0"/>
+          <include name="pitchApproval"/>
+        </methods>
+      </class> <!-- com.TIautomation.TimesInfluence.CreatePitch -->
+    </classes>
+  </test> <!-- Command line test e4ceb235-bf50-49c8-926b-a03432e3396e(failed) -->
+</suite> <!-- Failed suite [MyDefault Test Suite] -->

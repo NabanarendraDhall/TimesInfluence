@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">MyDefault Test Suite</th></tr><tr><td><a href="#t0">Command line test e4ceb235-bf50-49c8-926b-a03432e3396e</a></td><td class="num">0</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">23,799</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MyDefault Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test e4ceb235-bf50-49c8-926b-a03432e3396e &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.TIautomation.TimesInfluence.CreatePitch</td><td><a href="#m0">createPitch</a></td><td rowspan="1">1540993051941</td><td rowspan="1">23782</td></tr><tr><th colspan="4">Command line test e4ceb235-bf50-49c8-926b-a03432e3396e &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.TIautomation.TimesInfluence.CreatePitch</td><td><a href="#m1">pitchApproval</a></td><td rowspan="1">1540993075726</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">pitchAssign</a></td><td rowspan="1">1540993075726</td><td rowspan="1">0</td></tr></tbody></table><h2>Command line test e4ceb235-bf50-49c8-926b-a03432e3396e</h2><h3 id="m0">com.TIautomation.TimesInfluence.CreatePitch#createPitch</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>North</td><td>times</td><td>sales</td><td>pitchBrief for new pitch</td><td>Media Partnership</td><td>Banking</td><td>1200000</td><td>Production Team</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of element located by By.xpath: html/body/times-root/app-authorized/div[3]/div/app-event/div/div[3]/div/app-pitch-entry/form/div[1]/div[1]/div/div[1]/div[1]/div/div[4]/div[1]/div/ul/li/a/b
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;MUMTEWD0500&apos;, ip: &apos;192.168.101.143&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54801}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Windows\TEMP\scoped_dir6644_12208}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=70.0.3538.77, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0aa3185c994c1572d4213c4cd95811b6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.TIautomation.TimesInfluence.CreatePitch.createPitch(CreatePitch.java:66)
+	at com.mentorstudies.automationframework.TestRunner.main(TestRunner.java:117)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/times-root/app-authorized/div[3]/div/app-event/div/div[3]/div/app-pitch-entry/form/div[1]/div[1]/div/div[1]/div[1]/div/div[4]/div[1]/div/ul/li/a/b&quot;}
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;MUMTEWD0500&apos;, ip: &apos;192.168.101.143&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_162&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:54801}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Windows\TEMP\scoped_dir6644_12208}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=70.0.3538.77, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0aa3185c994c1572d4213c4cd95811b6
+*** Element info: {Using=xpath, value=html/body/times-root/app-authorized/div[3]/div/app-event/div/div[3]/div/app-pitch-entry/form/div[1]/div[1]/div/div[1]/div[1]/div/div[4]/div[1]/div/ul/li/a/b}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 29 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.TIautomation.TimesInfluence.CreatePitch#pitchApproval</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method CreatePitch.pitchApproval(java.lang.String)[pri:0, instance:com.TIautomation.TimesInfluence.CreatePitch@60fc7431] depends on not successfully finished methods
+	at com.mentorstudies.automationframework.TestRunner.main(TestRunner.java:117)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.TIautomation.TimesInfluence.CreatePitch#pitchAssign</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method CreatePitch.pitchAssign(java.lang.String)[pri:0, instance:com.TIautomation.TimesInfluence.CreatePitch@60fc7431] depends on not successfully finished methods
+	at com.mentorstudies.automationframework.TestRunner.main(TestRunner.java:117)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:294)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
